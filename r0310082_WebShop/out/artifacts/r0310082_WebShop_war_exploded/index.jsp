@@ -33,19 +33,31 @@
 			<div id="welcome-text">
 				<h2>All Hail The Donald !</h2>
 
-				<p><i>"We will make America strong again. We will make America proud again.
-					We will make America safe again. And we will Make America Great Again!"</i></p>
-				<p id="signature">- President Donald J. Trump</p>
 				<p>Donald J. Trump is the very definition of the American success story,
 					setting the standards of excellence in his business endeavors, and now,
 					for the United States of America.</p>
-				<form method="post" action="Controller?action=home">
+
+
+				<form id="quote-form" method="post" action="Controller?action=home">
 					<p>Do you want to see a Quote ?</p>
-					<p><input id="quoteYes" type="radio" name="quote" value="yes" ${yesChecked}><br>Yes</p>
-					<p><input id="quoteNo" type="radio" name="quote" value="no" ${noChecked}><br>No</p>
-					<p><input type="submit" value="Send"></p>
+
+					<input id="quoteYes" type="radio" name="quote" value="yes" ${yesChecked}>
+					<label for="quoteYes">Yes</label>
+
+					<input id="quoteNo" type="radio" name="quote" value="no" ${noChecked}>
+					<label for="quoteNo">No</label>
+					<input type="submit" value=" SEND ">
 				</form>
-				<p>${fn:escapeXml(quote)}</p>
+				<p id="signature">${fn:escapeXml(quote)}</p>
+
+				<form id="login-form" action="Controller?action=logIn" method="post">
+					<label for="userId">USERID:</label>
+					<input id="userId" name="userId" type="text"><br>
+					<label for="password">PASSWORD:</label>
+					<input id="password" name="password" type="text"><br>
+					<input type="submit" value="LOGIN">
+				</form>
+
 			</div>
 		</main>
 		<footer> &copy; Webontwikkeling 3, UC Leuven-Limburg </footer>

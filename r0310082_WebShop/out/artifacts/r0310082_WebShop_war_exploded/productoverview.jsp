@@ -37,6 +37,8 @@
 
         <main>
             <h2>Product Overview</h2>
+            <p id="message-order-confirmed">${messageOrderConfirmed}</p>
+
             <table>
                 <tr>
                     <th>Name</th>

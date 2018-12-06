@@ -3,6 +3,7 @@ package controller;
 import domain.model.Order;
 import domain.model.Product;
 
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -18,7 +19,8 @@ public class AddOrder extends RequestHandler {
         int amount = Integer.parseInt(request.getParameter("orderAmount"));
         Order order = new Order(productId, amount);
 
-        HttpSession session = request.getSession(false);
+        //HttpSession session = request.getSession(false);
+        HttpSession session = request.getSession();
 
         if (session.getAttribute("orders") == null) {
             session = request.getSession();
@@ -29,9 +31,12 @@ public class AddOrder extends RequestHandler {
         orders.add(order);
 
         session.setAttribute("orders", orders);
-
+        session.setAttribute("products", getShopService().getProducts());
+        request.setAttribute("messageOrderConfirmed", "Product was added to My Cart !");
 
         String destination = "productoverview.jsp";
         return destination;
     }
+
+
 }

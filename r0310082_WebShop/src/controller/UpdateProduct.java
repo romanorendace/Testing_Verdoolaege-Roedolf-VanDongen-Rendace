@@ -21,6 +21,7 @@ public class UpdateProduct extends RequestHandler {
         if (errors.size() == 0) {
             try {
                 getShopService().updateProduct(updatedProduct);
+                request.setAttribute("products", getShopService().getProducts());
                 return "productoverview.jsp";
             }
             catch (Exception exc) {

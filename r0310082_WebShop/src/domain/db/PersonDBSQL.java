@@ -58,6 +58,33 @@ public class PersonDBSQL implements PersonDB {
     }
 
     @Override
+    public Person getPersonByEmail(String email) throws DbException {
+        if(email == null){
+            throw new DbException("No id given");
+        }
+
+        try (Connection connection = DriverManager.getConnection(url, properties);
+             Statement statement = connection.createStatement()) {
+
+            String sql = "SELECT * FROM person WHERE email = '" + email.toLowerCase() + "'";
+            ResultSet result =  statement.executeQuery(sql);
+
+            Person person = new Person();
+            while (result.next()) {
+                person.setUserid(result.getString("userid"));
+                person.setLastName(result.getString("lastname"));
+                person.setFirstName(result.getString("firstname"));
+                person.setEmail(result.getString("email"));
+                person.setPassword(result.getString("password"));
+            }
+            return person;
+        }
+        catch (SQLException exc) {
+            throw new DbException(exc.getMessage(), exc);
+        }
+    }
+
+    @Override
     public List<Person> getAll() throws DbException {
         List<Person> persons = new ArrayList<>();
 

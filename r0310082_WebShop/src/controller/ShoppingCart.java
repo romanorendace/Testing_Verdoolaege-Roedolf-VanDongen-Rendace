@@ -14,7 +14,9 @@ public class ShoppingCart extends RequestHandler {
     @Override
     public String handleRequest(HttpServletRequest request, HttpServletResponse response) {
 
-        HttpSession session = request.getSession(false);
+        //HttpSession session = request.getSession(false);
+        HttpSession session = request.getSession();
+
 
         if (session.getAttribute("orders") == null) {
             session = request.getSession();

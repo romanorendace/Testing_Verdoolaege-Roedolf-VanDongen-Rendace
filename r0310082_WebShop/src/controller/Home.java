@@ -37,9 +37,11 @@ public class Home extends RequestHandler {
         }
     }
 
-    private void setQuoteFromValue(HttpServletRequest request, String value) {
+    private void setQuoteFromValue(HttpServletRequest request, String value)    {
         if (value.equals("yes")) {
-            request.setAttribute("quote", "VENI, VIDI, VICI");
+            String quote ="\"We will make America strong again. We will make America proud again.\n" +
+                    "\t\t\t\t\tWe will make America safe again. And we will Make America Great Again!\"";
+            request.setAttribute("quote", quote);
             request.setAttribute("yesChecked", "checked");
             request.setAttribute("noChecked", "");
         }

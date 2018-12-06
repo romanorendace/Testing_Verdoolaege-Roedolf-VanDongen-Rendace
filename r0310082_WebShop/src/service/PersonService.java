@@ -20,6 +20,8 @@ public class PersonService {
         return db.get(userId);
     }
 
+    public Person getPersonByEmail(String email) { return db.getPersonByEmail(email); }
+
     public List<Person> getAll() {
         return db.getAll();
     }

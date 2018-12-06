@@ -7,6 +7,8 @@ import java.util.List;
 public interface PersonDB {
     Person get(String personId) throws DbException;
 
+    Person getPersonByEmail(String email) throws DbException;
+
     List<Person> getAll() throws DbException;
 
     void add(Person person) throws DbException;

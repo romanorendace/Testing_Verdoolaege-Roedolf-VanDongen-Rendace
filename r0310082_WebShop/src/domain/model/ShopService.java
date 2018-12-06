@@ -22,6 +22,10 @@ public class ShopService {
         return personService.get(personId);
     }
 
+    public Person getPersonByEmail(String email) throws DbException {
+        return personService.getPersonByEmail(email);
+    }
+
     public List<Person> getPersons() {
         return personService.getAll();
     }
