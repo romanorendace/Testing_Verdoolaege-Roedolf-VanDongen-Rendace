@@ -1,5 +1,6 @@
 package domain.db;
 
+import domain.model.Order;
 import domain.model.Person;
 
 import java.util.List;
@@ -19,4 +20,7 @@ public interface PersonDB {
 
     int getNumberOfPersons();
 
+    void addPersonOrders(Person person, List<Order> orders);
+
+    List<Order> getPersonOrders(Person person);
 }

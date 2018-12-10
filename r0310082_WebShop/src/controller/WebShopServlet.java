@@ -1,8 +1,7 @@
 package controller;
 
-import domain.model.Person;
-import domain.model.Product;
-import domain.model.ShopService;
+import domain.model.*;
+import org.apache.xpath.operations.Bool;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -10,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Enumeration;
@@ -21,7 +21,8 @@ public class WebShopServlet extends HttpServlet {
     private ShopService shopService; // = new ShopService();
     private ControllerFactory controllerFactory = new ControllerFactory();
 
-    public WebShopServlet(){
+
+    public WebShopServlet() {
         super();
     }
 
@@ -51,20 +52,51 @@ public class WebShopServlet extends HttpServlet {
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+        deleteSessionErrorMessages(request);
         String action = request.getParameter("action");
+        if (action == null) {
+            initializeSessionAndAttributes(request);
+        }
         String destination = "index.jsp";
         if (action != null) {
-                action = action.substring(0, 1).toUpperCase() + action.substring(1); // set first char to Uppercase for mapping with Classes
-                RequestHandler handler;
-                handler = controllerFactory.getController(action , shopService);
-            destination = handler.handleRequest(request, response);
+            action = action.substring(0, 1).toUpperCase() + action.substring(1); // set first char to Uppercase for mapping with Classes
+            RequestHandler handler;
 
+            try {
+
+                handler = controllerFactory.getController(action, shopService);
+                destination = handler.handleRequest(request, response);
+            }
+            catch (NotAuthorizedException e) {
+                request.setAttribute("notAuthorized",
+                        "You have insufficient rights to have a look at the requested page !");
+            }
         }
-        request.getRequestDispatcher(destination).forward(request, response);
 
+        Boolean isRedirect = (Boolean) request.getSession().getAttribute("isRedirect");
+        if (isRedirect != null && isRedirect) {
+            request.getSession().setAttribute("isRedirect", false);
+            response.sendRedirect(destination);
+        }
+        else {
+            request.getRequestDispatcher(destination).forward(request, response);
+        }
+    }
 
+    private void initializeSessionAndAttributes(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        session.setMaxInactiveInterval(60*60);
 
+        session.setAttribute("orders", new ArrayList<Order>());
+        session.setAttribute("isLoggedIn", false);
+    }
+
+    private void deleteSessionErrorMessages(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        session.setAttribute("messageOrderConfirmed", null);
+        session.setAttribute("messageLogInFailed", null);
+        session.setAttribute("messageOrderUpdated", null);
+    }
 
 //        String action = "home";
 //        if (request.getParameter("action") != null) {
@@ -107,7 +139,7 @@ public class WebShopServlet extends HttpServlet {
 //                destination = home(request, response);
 //        }
 //        request.getRequestDispatcher(destination).forward(request, response);
-    }
+//    }
 //    private String home(HttpServletRequest request, HttpServletResponse response)
 //            throws ServletException, IOException {
 //        String destination = "index.jsp";

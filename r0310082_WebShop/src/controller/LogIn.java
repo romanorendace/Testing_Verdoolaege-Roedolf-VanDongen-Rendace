@@ -5,35 +5,36 @@ import domain.model.Person;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
 
 public class LogIn extends RequestHandler {
 
     @Override
     public String handleRequest(HttpServletRequest request, HttpServletResponse response) {
-        String email = request.getParameter("email").toLowerCase();
+        String email = request.getParameter("email").trim().toLowerCase();
         String password = request.getParameter("password");
 
-        if (isRegisteredUser(email, password)) {
-            startUserSession(email, request);
+        HttpSession session = request.getSession();
+
+        if (email.trim().isEmpty() || password.trim().isEmpty()) {
+            session.setAttribute("messageLogInFailed", "Log in unsuccessful, please enter valid email/password" );
         }
         else {
-
+            Person person = getShopService().getPersonByEmail(email);
+            if (person.isCorrectPassword(password)) {
+                session.setAttribute("isLoggedIn", true);
+                session.setAttribute("person", person);
+            }
+            else {
+                session.setAttribute("messageLogInFailed", "Log in unsuccessful, please enter valid email/password" );
+            }
         }
 
+        request.getSession().setAttribute("isRedirect", true);
 
         String destination = "index.jsp";
         return destination;
     }
 
-    private boolean isRegisteredUser(String email, String password) {
-        Person person = getShopService().getPersonByEmail(email);
-        Boolean isRegisteredUser = person.isCorrectPassword(password);
-        return isRegisteredUser;
-    }
-
-    private void startUserSession(String email, HttpServletRequest request) {
-        HttpSession session = request.getSession();
-        session.setAttribute("");
-    }
 
 }

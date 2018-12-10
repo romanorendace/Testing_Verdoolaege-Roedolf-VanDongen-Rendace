@@ -10,6 +10,9 @@ public class DeleteUser extends RequestHandler {
         String userId = request.getParameter("userId");
         getShopService().deletePerson(userId);
         request.setAttribute("persons", getShopService().getPersons());
+
+        request.getSession().setAttribute("isRedirect", true);
+
         String destination = "personoverview.jsp";
         return destination;
     }

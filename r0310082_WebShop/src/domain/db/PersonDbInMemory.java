@@ -1,5 +1,6 @@
 package domain.db;
 
+import domain.model.Order;
 import domain.model.Person;
 
 import java.util.ArrayList;
@@ -23,7 +24,12 @@ public class PersonDbInMemory implements PersonDB {
 		}
 		return persons.get(personId);
 	}
-	
+
+	@Override
+	public Person getPersonByEmail(String email) throws DbException {
+		return null;
+	}
+
 	@Override
     public List<Person> getAll() throws DbException {
 		return new ArrayList<Person>(persons.values());	
@@ -74,5 +80,13 @@ public class PersonDbInMemory implements PersonDB {
 		return persons.size();
 	}
 
+	@Override
+	public void addPersonOrders(Person person, List<Order> orders) {
 
+	}
+
+	@Override
+	public List<Order> getPersonOrders(Person person) {
+		return null;
+	}
 }

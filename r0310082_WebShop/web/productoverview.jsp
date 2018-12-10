@@ -21,15 +21,23 @@
     <div id="container">
         <header>
             <h1>
-                <p><a href="Controller?action=shoppingCart">My Cart</a></p>
+                <c:if test="${person.role == 'CUSTOMER' || person.role == 'ADMINISTRATOR'}">
+                    <p id="order-history"><a href="Controller?action=orderHistory">Order History</a></p>
+                    <p><a href="Controller?action=shoppingCart">My Cart</a></p>
+                </c:if>
+
                 <span>Web Shop</span>
             </h1>
             <nav>
                 <ul>
                     <li><a href="Controller?action=home">Home</a></li>
-                    <li><a href="Controller?action=users">Users</a></li>
+                    <c:if test="${person.role == 'ADMINISTRATOR'}">
+                        <li><a href="Controller?action=users">Users</a></li>
+                    </c:if>
                     <li id="actual"><a href="Controller?action=products">Products</a></li>
-                    <li><a href="Controller?action=addProductForm">Add Product</a></li>
+                    <c:if test="${person.role == 'ADMINISTRATOR'}">
+                        <li><a href="Controller?action=addProductForm">Add Product</a></li>
+                    </c:if>
                     <li><a href="Controller?action=signUp">Sign up</a></li>
                 </ul>
             </nav>
@@ -52,6 +60,7 @@
                     <td>${fn:escapeXml(product.description)}</td>
                     <td>${fn:escapeXml(product.price)}</td>
                     <td><a href="Controller?action=deleteProductForm&productId=${fn:escapeXml(product.productId)}">DELETE</a></td>
+
                         <form id="order-form" action="Controller?action=addOrder" method="post">
                             <input type="hidden" name="orderProductId" value="${fn:escapeXml(product.productId)}">
                             <td><input type="submit" value="ORDER"></td>

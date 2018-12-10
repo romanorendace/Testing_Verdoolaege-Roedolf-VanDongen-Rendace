@@ -42,6 +42,14 @@ public class ShopService {
         personService.delete(id);
     }
 
+    public void addPersonOrders(Person person, List<Order> orders) throws DbException {
+        personService.addPersonOrders(person, orders);
+    }
+
+    public List<Order> getPersonOrders(Person person) throws DbException {
+        return personService.getPersonOrders(person);
+    }
+
 
 
     // PRODUCT METHODS

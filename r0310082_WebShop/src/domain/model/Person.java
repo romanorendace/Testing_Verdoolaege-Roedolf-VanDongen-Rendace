@@ -13,6 +13,7 @@ public class Person {
 	private String lastName;
 	private String email;
 	private String password;
+	private Role role;
 
 	public Person(String userid, String email, String password, String firstName, String lastName) {
 		setUserid(userid);
@@ -96,6 +97,14 @@ public class Person {
 			throw new IllegalArgumentException("No last name given");
 		}
 		this.lastName = lastName;
+	}
+
+	public Role getRole() {
+		return role;
+	}
+
+	public void setRole(Role role) {
+		this.role = role;
 	}
 
 	@Override

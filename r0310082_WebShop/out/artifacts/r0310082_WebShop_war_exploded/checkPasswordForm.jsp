@@ -14,13 +14,25 @@
 <body>
 <div id="container">
     <header>
-        <h1><span>Web Shop</span></h1>
+
+
+        <h1>
+            <c:if test="${person.role == 'CUSTOMER' || person.role == 'ADMINISTRATOR'}">
+                <p id="order-history"><a href="Controller?action=orderHistory">Order History</a></p>
+            </c:if>
+            <p><a href="Controller?action=shoppingCart">My Cart</a></p>
+            <span>Web Shop</span>
+        </h1>
         <nav>
             <ul>
-                <li><a href="Controller?action=home">Home</a></li>
-                <li><a href="Controller?action=users">Users</a></li>
+                <li id="actual"><a href="Controller?action=home">Home</a></li>
+                <c:if test="${person.role == 'ADMINISTRATOR'}">
+                    <li><a href="Controller?action=users">Users</a></li>
+                </c:if>
                 <li><a href="Controller?action=products">Products</a></li>
-                <li><a href="Controller?action=addProductForm">Add Product</a></li>
+                <c:if test="${person.role == 'ADMINISTRATOR'}">
+                    <li><a href="Controller?action=addProductForm">Add Product</a></li>
+                </c:if>
                 <li><a href="Controller?action=signUp">Sign up</a></li>
             </ul>
         </nav>

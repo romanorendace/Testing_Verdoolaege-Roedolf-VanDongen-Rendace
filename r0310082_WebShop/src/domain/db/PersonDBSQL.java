@@ -1,8 +1,12 @@
 package domain.db;
 
+import domain.model.Order;
 import domain.model.Person;
+import domain.model.Role;
 
 import java.sql.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -49,6 +53,7 @@ public class PersonDBSQL implements PersonDB {
                 person.setLastName(result.getString("lastname"));
                 person.setEmail(result.getString("email"));
                 person.setPassword(result.getString("password"));
+                person.setRole(Role.valueOf(result.getString("role")));
             }
             return person;
         }
@@ -76,6 +81,7 @@ public class PersonDBSQL implements PersonDB {
                 person.setFirstName(result.getString("firstname"));
                 person.setEmail(result.getString("email"));
                 person.setPassword(result.getString("password"));
+                person.setRole(Role.valueOf(result.getString("role")));
             }
             return person;
         }
@@ -101,6 +107,7 @@ public class PersonDBSQL implements PersonDB {
                 person.setLastName(results.getString("lastname"));
                 person.setEmail(results.getString("email"));
                 person.setPassword(results.getString("password"));
+                person.setRole(Role.valueOf(results.getString("role")));
 
                 persons.add(person);
             }
@@ -116,8 +123,8 @@ public class PersonDBSQL implements PersonDB {
         if (person == null) {
             throw new DbException("Person cannot be Null.");
         }
-        String sql = "INSERT INTO person (userid, firstname, lastname, email, password)"
-                + "VALUES(?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO person (userid, firstname, lastname, email, password, role)"
+                + "VALUES(?, ?, ?, ?, ?, ?)";
 
         try (Connection connection = DriverManager.getConnection(url, properties);
              PreparedStatement statement = connection.prepareStatement(sql)){
@@ -135,6 +142,7 @@ public class PersonDBSQL implements PersonDB {
             statement.setString(3, person.getLastName());
             statement.setString(4, person.getEmail());
             statement.setString(5, person.getPassword());
+            statement.setString(6, person.getRole().toString());
 
             statement.execute();
         }
@@ -143,6 +151,7 @@ public class PersonDBSQL implements PersonDB {
         }
     }
 
+    // NEVER CALLED
     @Override
     public void update(Person person) throws DbException {
         if (person == null) {
@@ -199,5 +208,63 @@ public class PersonDBSQL implements PersonDB {
     @Override
     public int getNumberOfPersons() {
         return getAll().size();
+    }
+
+    @Override
+    public void addPersonOrders(Person person, List<Order> orders) {
+
+        String sql = "INSERT INTO orders (email, productid, amount, datum)"
+                + " VALUES(?, ?, ?, ?)";
+
+        try (Connection connection = DriverManager.getConnection(url, properties);
+             PreparedStatement statement = connection.prepareStatement(sql)) {
+
+            for (Order order : orders) {
+
+                statement.setString(1, person.getEmail());
+                statement.setString(2, String.valueOf(order.getProductId()));
+                statement.setInt(3, order.getAmount());
+                statement.setString(4, getCurrentDate());
+
+                statement.execute();
+            }
+        } catch (SQLException e) {
+            throw new DbException(e.getMessage(), e);
+        }
+    }
+
+    private String getCurrentDate() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
+        LocalDateTime dateTime = LocalDateTime.now();
+        String date = dateTime.format(formatter);
+        return date;
+    }
+
+    @Override
+    public List<Order> getPersonOrders(Person person) {
+        List<Order> orders = new ArrayList<>();
+
+        try (Connection connection = DriverManager.getConnection(url, properties);
+             Statement statement = connection.createStatement()) {
+
+            String sql = "SELECT * FROM orders"
+                    + " WHERE email = '" + person.getEmail().trim() + "'";
+
+            ResultSet results =  statement.executeQuery(sql);
+
+            while (results.next()) {
+                Order order = new Order();
+
+                order.setProductId(results.getString("productid"));
+                order.setAmount(results.getInt("amount"));
+                order.setDate(results.getString("datum"));
+
+                orders.add(order);
+            }
+        }
+        catch (SQLException exc) {
+            throw new DbException(exc.getMessage(), exc);
+        }
+        return orders;
     }
 }

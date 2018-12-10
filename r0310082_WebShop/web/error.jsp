@@ -16,10 +16,14 @@
             </h1>
             <nav>
                 <ul>
-                    <li><a href="Controller?action=home">Home</a></li>
-                    <li><a href="Controller?action=users">Users</a></li>
+                    <li id="actual"><a href="Controller?action=home">Home</a></li>
+                    <c:if test="${person.role == 'ADMINISTRATOR'}">
+                        <li><a href="Controller?action=users">Users</a></li>
+                    </c:if>
                     <li><a href="Controller?action=products">Products</a></li>
-                    <li><a href="Controller?action=addProductForm">Add Product</a></li>
+                    <c:if test="${person.role == 'ADMINISTRATOR'}">
+                        <li><a href="Controller?action=addProductForm">Add Product</a></li>
+                    </c:if>
                     <li><a href="Controller?action=signUp">Sign up</a></li>
                 </ul>
             </nav>

@@ -2,6 +2,7 @@ package service;
 
 import domain.db.PersonDB;
 import domain.db.PersonDBSQL;
+import domain.model.Order;
 import domain.model.Person;
 
 import java.util.List;
@@ -42,4 +43,11 @@ public class PersonService {
         return db.getNumberOfPersons();
     }
 
+    public void addPersonOrders(Person person, List<Order> orders) {
+        db.addPersonOrders(person, orders);
+    }
+
+    public List<Order> getPersonOrders(Person person) {
+        return db.getPersonOrders(person);
+    }
 }

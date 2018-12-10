@@ -22,6 +22,9 @@
 <div id="container">
     <header>
         <h1>
+            <c:if test="${person.role == 'CUSTOMER' || person.role == 'ADMINISTRATOR'}">
+                <p id="order-history"><a href="Controller?action=orderHistory">Order History</a></p>
+            </c:if>
             <p><a href="Controller?action=shoppingCart">Shopping Cart</a></p>
             <span>Web Shop</span>
         </h1>

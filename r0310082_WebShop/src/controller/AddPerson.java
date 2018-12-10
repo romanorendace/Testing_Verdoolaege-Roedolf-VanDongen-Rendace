@@ -1,6 +1,7 @@
 package controller;
 
 import domain.model.Person;
+import domain.model.Role;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -19,12 +20,17 @@ public class AddPerson extends RequestHandler {
         getSetEmailPerson(person, request, errors);
         getSetPasswordPerson(person, request, errors);
 
+        person.setRole(Role.CUSTOMER);
+
 
         if (errors.size() == 0) {
             try {
                 getShopService().addPerson(person);
                 request.setAttribute("persons", getShopService().getPersons());
-                String destination = "personoverview.jsp";
+
+                request.getSession().setAttribute("isRedirect", true);
+
+                String destination = "index.jsp";
                 return destination;
             }
             catch (Exception exc) {

@@ -7,103 +7,77 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="420ae06a-a409-4833-90be-ed4078f5e45e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/LogIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/r0310082_WebShop_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/r0310082_WebShop_war.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war/r0310082_WebShop_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war/r0310082_WebShop_war.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/AddOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/AddOrder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/AddPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/AddPerson.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/AddProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/AddProduct.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/AddProductForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/AddProductForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/CheckPassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/CheckPassword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/CheckPasswordForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/CheckPasswordForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/ControllerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/ControllerFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/DeleteProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/DeleteProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/DeleteProductForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/DeleteProductForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/DeleteUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/DeleteUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/DeleteUserForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/DeleteUserForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/Products.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/Products.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/RequestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/RequestHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/ShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/ShoppingCart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/SignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/SignUp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/UpdateProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/UpdateProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/UpdateProductForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/UpdateProductForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/Users.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/WebShopServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/controller/WebShopServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/db/DbException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/db/DbException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/db/PersonDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/db/PersonDB.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/db/PersonDBSQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/db/PersonDBSQL.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/db/PersonDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/db/PersonDbInMemory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/db/ProductDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/db/ProductDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/db/ProductDBSQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/db/ProductDBSQL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/db/ProductDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/db/ProductDbInMemory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/DomainException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/DomainException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/Order.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/ShopService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/ShopService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/comparator/ComparatorByEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/comparator/ComparatorByEmail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/comparator/ComparatorByFirstName.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/comparator/ComparatorByFirstName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/comparator/ComparatorByLastName.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/comparator/ComparatorByLastName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/comparator/PersonComparatorFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/domain/model/comparator/PersonComparatorFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/service/PersonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/ui/desktop/TestDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/classes/ui/desktop/TestDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/addProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/addProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/checkPasswordForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/checkPasswordForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/checkPasswordResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/checkPasswordResult.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/error.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/personoverview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/personoverview.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/productoverview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/productoverview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/shoppingCart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/shoppingCart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/signUp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/updateProductForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/r0310082_WebShop_war_exploded/updateProductForm.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/AddOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/AddOrder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/AddPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/AddPerson.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/AddProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/AddProduct.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/AddProductForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/AddProductForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/CheckPassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/CheckPassword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/CheckPasswordForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/CheckPasswordForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/ControllerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/ControllerFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/DeleteProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/DeleteProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/DeleteProductForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/DeleteProductForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/DeleteUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/DeleteUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/DeleteUserForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/DeleteUserForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/Products.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/Products.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/RequestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/RequestHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/ShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/ShoppingCart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/SignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/SignUp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/UpdateProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/UpdateProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/UpdateProductForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/UpdateProductForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/Users.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/WebShopServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/controller/WebShopServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/db/DbException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/db/DbException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/db/PersonDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/db/PersonDBSQL.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/db/PersonDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/db/PersonDbInMemory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/db/ProductDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/db/ProductDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/db/ProductDBSQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/db/ProductDBSQL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/db/ProductDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/db/ProductDbInMemory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/DomainException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/DomainException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/Order.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/ShopService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/comparator/ComparatorByEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/comparator/ComparatorByEmail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/comparator/ComparatorByFirstName.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/comparator/ComparatorByFirstName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/comparator/ComparatorByLastName.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/comparator/ComparatorByLastName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/comparator/PersonComparatorFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/domain/model/comparator/PersonComparatorFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/service/PersonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/r0310082_WebShop/ui/desktop/TestDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/r0310082_WebShop/ui/desktop/TestDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/r0310082_WebShop/view/RegisterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/r0310082_WebShop/view/RegisterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/r0310082_WebShop/view/SeleniumWorksWellTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/r0310082_WebShop/view/SeleniumWorksWellTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/AddOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AddPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AddProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AddProductForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddProductForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/DeleteProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DeleteProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DeleteUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LogIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ShoppingCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/UpdateProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/UpdateProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/WebShopServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/WebShopServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/db/PersonDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/db/PersonDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/db/PersonDBSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/db/PersonDBSQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/db/PersonDbInMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/db/PersonDbInMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/model/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/ShopService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/addProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/addProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/checkPasswordForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/checkPasswordForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/checkPasswordResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/checkPasswordResult.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/error.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/personoverview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/personoverview.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/productoverview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/productoverview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/shoppingCart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/shoppingCart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signUp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/updateProductForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/updateProductForm.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -190,103 +164,18 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="424727304">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controller/LogIn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#isRegisteredUser#0;class#LogIn#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/model/ShopService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/service/PersonService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="22" column="86" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="86" />
-              <folding>
-                <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/db/PersonDBSQL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1184">
-              <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/db/PersonDB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/CheckPassword.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/WebShopServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/Home.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="39" column="80" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
-              <folding>
-                <element signature="method#updateQuoteCookie#0;class#Home#0" />
-                <element signature="method#setQuoteFromValue#0;class#Home#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -436,6 +325,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -496,14 +386,13 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543506738042" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Labo/08_Sessions/voorbeeld-code" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544467191496" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -762,6 +651,7 @@
       <workItem from="1543489045680" duration="10006000" />
       <workItem from="1543579481766" duration="16000" />
       <workItem from="1543923067049" duration="647000" />
+      <workItem from="1544467157807" duration="68000" />
     </task>
     <servers />
   </component>
@@ -798,7 +688,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143314000" />
+    <option name="totallyTimeSpent" value="143382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -811,9 +701,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7687943" visible="true" weight="0.27785236" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7687943" visible="true" weight="0.2818792" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1175,7 +1064,7 @@
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
-          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
@@ -1188,33 +1077,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/service/PersonService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="22" column="86" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="86" />
-          <folding>
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="192">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/db/PersonDBSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1184">
+        <state relative-caret-position="1120">
           <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/db/PersonDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/CheckPassword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="96">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -1242,8 +1120,14 @@
           <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#isRegisteredUser#0;class#LogIn#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/CheckPassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>

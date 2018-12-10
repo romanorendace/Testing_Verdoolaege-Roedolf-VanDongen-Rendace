@@ -1,15 +1,20 @@
 package controller;
 
+import domain.model.NotAuthorizedException;
+import domain.model.Person;
 import domain.model.Product;
+import domain.model.Role;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
+import java.util.List;
 
 public class AddProduct extends RequestHandler {
 
     @Override
     public String handleRequest(HttpServletRequest request, HttpServletResponse response) {
+
         ArrayList<String> errors = new ArrayList<>();
         Product product = new Product();
 
@@ -21,7 +26,11 @@ public class AddProduct extends RequestHandler {
         if (errors.size() == 0) {
             try {
                 getShopService().addProduct(product);
-                request.setAttribute("products", getShopService().getProducts());
+
+                request.getSession().setAttribute("isRedirect", true);
+
+                request.getSession().setAttribute("products", getShopService().getProducts());
+
                 String destination = "productoverview.jsp";
                 return destination;
             }

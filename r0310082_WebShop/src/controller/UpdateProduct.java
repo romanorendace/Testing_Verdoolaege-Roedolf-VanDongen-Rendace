@@ -22,7 +22,11 @@ public class UpdateProduct extends RequestHandler {
             try {
                 getShopService().updateProduct(updatedProduct);
                 request.setAttribute("products", getShopService().getProducts());
-                return "productoverview.jsp";
+
+                request.getSession().setAttribute("isRedirect", true);
+
+                String destination = "productoverview.jsp";
+                return destination;
             }
             catch (Exception exc) {
                 request.setAttribute("error", exc.getMessage());

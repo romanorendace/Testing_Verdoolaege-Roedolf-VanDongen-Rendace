@@ -15,16 +15,25 @@
 	<div id="container">
 		<header>
 			<h1>
-				<p><a href="Controller?action=shoppingCart">My Cart</a></p>
+				<c:if test="${person.role == 'CUSTOMER' || person.role == 'ADMINISTRATOR'}">
+					<p id="order-history"><a href="Controller?action=orderHistory">Order History</a></p>
+					<p><a href="Controller?action=shoppingCart">My Cart</a></p>
+				</c:if>
+
 				<span>Web Shop</span>
 			</h1>
 			<nav>
 				<ul>
 					<li id="actual"><a href="Controller?action=home">Home</a></li>
-					<li><a href="Controller?action=users">Users</a></li>
+					<c:if test="${person.role == 'ADMINISTRATOR'}">
+						<li><a href="Controller?action=users">Users</a></li>
+					</c:if>
 					<li><a href="Controller?action=products">Products</a></li>
-					<li><a href="Controller?action=addProductForm">Add Product</a></li>
+					<c:if test="${person.role == 'ADMINISTRATOR'}">
+						<li><a href="Controller?action=addProductForm">Add Product</a></li>
+					</c:if>
 					<li><a href="Controller?action=signUp">Sign up</a></li>
+
 				</ul>
 			</nav>
 		</header>
@@ -50,13 +59,30 @@
 				</form>
 				<p id="signature">${fn:escapeXml(quote)}</p>
 
-				<form id="login-form" action="Controller?action=logIn" method="post">
-					<label for="email">EMAIL:</label>
-					<input id="email" name="email" type="text"><br>
-					<label for="password">PASSWORD:</label>
-					<input id="password" name="password" type="text"><br>
-					<input type="submit" value="LOGIN">
-				</form>
+				<c:if test="${notAuthorized!=null }">
+					<p id="message-not-authorized" class="error">${notAuthorized }</p>
+				</c:if>
+				<p id="message-log-in-failed">${fn:escapeXml(messageLogInFailed)}</p>
+
+				<c:choose>
+					<c:when test="${!isLoggedIn}">
+						<form id="login-form" action="Controller?action=logIn" method="post">
+							<label for="email">EMAIL:</label>
+							<input id="email" name="email" type="text"><br>
+							<label for="password">PASSWORD:</label>
+							<input id="password" name="password" type="text"><br>
+							<input type="submit" value=" LOGIN ">
+						</form>
+					</c:when>
+
+					<c:otherwise>
+						<h2>Welcome, ${person.firstName} !</h2>
+						<form id="log-out-form" action="Controller?action=logOut" method="post">
+							<input type="submit" value=" LOG OUT ">
+						</form>
+					</c:otherwise>
+				</c:choose>
+
 
 			</div>
 		</main>

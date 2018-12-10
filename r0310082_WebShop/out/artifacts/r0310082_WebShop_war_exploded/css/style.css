@@ -115,6 +115,11 @@ h1 span {
 	bottom: 15px;
 }
 
+#order-history {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
 
 
 h1 a:visited {
@@ -175,6 +180,43 @@ input,textarea {
 	right: 15px;
 	font-size: medium;
 	padding-bottom: 1em;
+}
+
+#message-log-in-failed {
+	color: red;
+	text-align: left;
+	right: 15px;
+	font-size: medium;
+	padding-bottom: 0em;
+}
+
+#message-not-authorized {
+	color: red;
+	text-align: left;
+	right: 15px;
+	font-size: medium;
+	padding-bottom: 0em;
+}
+
+#message-order-updated {
+	color: red;
+	text-align: center;
+	right: 15px;
+	font-size: medium;
+	padding-bottom: 1em;
+}
+
+#payment-confirmed img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 75%;
+}
+
+#payment-confirmed h2 {
+	text-align: center;
 }
 
 /* mobile first */
@@ -288,7 +330,47 @@ input {
 	vertical-align: top;
 }
 
+#login-form input {
+	margin-left: 15px;
+	/*margin-top: 15px;*/
+	box-sizing: border-box;
+	outline: 0;
+	padding: 0;
+	position: relative;
+	/*top: 9px;*/
+	vertical-align: top;
+}
 
+#log-out-form input {
+	margin-left: 15px;
+	padding-left: 0;
+	/*margin-top: 15px;*/
+	box-sizing: border-box;
+	outline: 0;
+	padding: 0;
+	position: relative;
+	/*top: 9px;*/
+	vertical-align: top;
+}
+
+#order-update-form input {
+	margin-left: 15px;
+	padding-left: 0;
+	/*margin-top: 15px;*/
+	box-sizing: border-box;
+	outline: 0;
+	padding: 0;
+	position: relative;
+	/*top: 9px;*/
+	vertical-align: top;
+}
+
+
+
+#total-price {
+	padding-top: 2em;
+	padding-left: 1em;
+}
 
 /*
 d3bb03 green
